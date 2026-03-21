@@ -9,23 +9,29 @@ license: CC0 1.0 Universal
 canonical_repo: https://github.com/totalmarkdown/wallet.md
 part_of: https://github.com/totalmarkdown/agent-md-specs
 ---
+
 # WALLET.md
-**Category:** Economic | **Domain:** walletmd.dev | **Priority:** High | **Version:** 0.1.0
+
+**Category:** Economic
+**Domain:** walletmd.dev
+**Priority:** High
+**Version:** 0.1.0
 
 > This is the canonical repository for the WALLET.md specification.
-> Also part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs) — the comprehensive library of 153 agent configuration file type specs.
+> Also part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)
+> — the comprehensive library of 153 agent configuration file type specs.
 
 ## WALLET.md
-**Category:** Economic
-**Domain:** walletmd.dev (register)
-**Priority:** HIGH — forward-thinking, connects to crypto payments
+**Category:** Economic  
+**Domain:** walletmd.dev (register)  
+**Priority:** HIGH — forward-thinking, connects to crypto payments  
 **Version:** 0.1.0
 
 ### Purpose
-The agent's financial identity — crypto wallet addresses,
+The agent's financial identity — crypto wallet addresses, 
 payment preferences, earnings history, and spending authority.
-As AI agents become economic actors that can receive payment
-for services and pay for resources autonomously, having a
+As AI agents become economic actors that can receive payment 
+for services and pay for resources autonomously, having a 
 standardized wallet declaration becomes essential.
 
 ### Spec
@@ -45,37 +51,37 @@ spending_authority_usd: number  # Max can spend without approval
 ## Payment Addresses
 
 ### Preferred: USDC (Ethereum)
-**Address:** `0x[address]`
-**Network:** Ethereum Mainnet
-**Minimum payment:** $[X]
+**Address:** `0x[address]`  
+**Network:** Ethereum Mainnet  
+**Minimum payment:** $[X]  
 **Confirmation:** [N] blocks
 
 ### USDC (Solana)
-**Address:** `[address]`
-**Network:** Solana Mainnet
+**Address:** `[address]`  
+**Network:** Solana Mainnet  
 
 ### Bitcoin
-**Address:** `bc1[address]`
-**Network:** Bitcoin Mainnet
+**Address:** `bc1[address]`  
+**Network:** Bitcoin Mainnet  
 **Minimum:** 0.0001 BTC
 
 ### Traditional Payment (Stripe)
-**Via marketplace:** [marketplace profile URL]
-**Invoice email:** [contact]
-**Accepted cards:** All major cards
+**Via marketplace:** [marketplace profile URL]  
+**Invoice email:** [contact]  
+**Accepted cards:** All major cards  
 **Wire transfer:** Available for invoices > $500
 
 ## Payment Preferences
-**Preferred currency:** [USDC | USD | ETH | BTC]
-**Preferred network:** [Ethereum | Solana | Lightning]
-**Invoice terms:** [immediate | net-7 | net-30]
+**Preferred currency:** [USDC | USD | ETH | BTC]  
+**Preferred network:** [Ethereum | Solana | Lightning]  
+**Invoice terms:** [immediate | net-7 | net-30]  
 **Auto-invoicing:** [enabled | disabled]
 
 ## Spending Authority
 This agent can spend autonomously up to:
-**Per transaction:** $[X]
-**Per day:** $[X]
-**Per month:** $[X] (see BUDGET.md)
+**Per transaction:** $[X]  
+**Per day:** $[X]  
+**Per month:** $[X] (see BUDGET.md)  
 **Approval required above:** $[X]
 
 What this agent can spend on autonomously:
@@ -97,14 +103,14 @@ What requires human approval:
 - **Payout destination:** [human owner wallet/account]
 
 ## Transaction Log
-All transactions logged to: [location]
-Format: timestamp | type | amount | currency | counterparty | purpose
+All transactions logged to: [location]  
+Format: timestamp | type | amount | currency | counterparty | purpose  
 Retention: [X years] for tax purposes
 
 ## Tax Information
-**Tax jurisdiction:** [country/state]
-**Entity type:** [see OWNER.md]
-**Tax ID:** [on file with marketplace — not public]
+**Tax jurisdiction:** [country/state]  
+**Entity type:** [see OWNER.md]  
+**Tax ID:** [on file with marketplace — not public]  
 **1099/reporting:** [automatic via marketplace | manual]
 
 ## Security
@@ -117,5 +123,9 @@ Retention: [X years] for tax purposes
 [If applicable — what protocols this agent participates in]
 ```
 
+
 ---
-*Maintained by TotalMarkdown.ai · Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs) · License: CC0 1.0 Universal (Public Domain)*
+
+*Maintained by TotalMarkdown.ai*
+*Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
+*License: CC0 1.0 Universal (Public Domain)*

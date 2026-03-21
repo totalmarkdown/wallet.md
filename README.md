@@ -1,18 +1,29 @@
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
-[![Part of agent-md-specs](https://img.shields.io/badge/Part_of-agent--md--specs-blue)](https://github.com/totalmarkdown/agent-md-specs)
-[![Maintained by TotalMarkdown.ai](https://img.shields.io/badge/Maintained_by-TotalMarkdown.ai-orange)](https://totalmarkdown.ai)
-
 # WALLET.md
 
-**The financial identity specification for AI agents.**
+> *Defines an AI agent's financial identity — budgets, payment methods, and spending authority*
+
+[![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Part of agent-md-specs](https://img.shields.io/badge/part%20of-agent--md--specs-blue)](https://github.com/totalmarkdown/agent-md-specs)
+[![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
+
+**Maintained by TotalMarkdown.ai**
+· License: CC0 1.0 Universal — Public Domain
+· Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)
+· [Discussions](https://github.com/totalmarkdown/wallet.md/discussions)
+
+> TotalMarkdown.ai is currently in development. Star this repo to follow progress.
+
+---
 
 ## What is WALLET.md?
 
-WALLET.md defines an agent's financial identity -- crypto wallet addresses, payment preferences, earnings history, and spending authority. As AI agents become economic actors that can receive payment for services and pay for resources autonomously, having a standardized wallet declaration becomes essential.
+WALLET.md defines an agent's financial identity and capabilities. It specifies budgets, spending limits, payment methods, and the authority an agent has to make financial decisions. As agents begin to transact — paying for APIs, hiring other agents, purchasing resources — they need a clear financial framework.
 
-The spec covers payment addresses across multiple networks (Ethereum, Solana, Bitcoin, and traditional Stripe), payment preferences, spending authority with per-transaction and per-day limits, earnings summaries, transaction logging, tax information, security practices, and optional DeFi participation. It draws clear lines between what an agent can spend autonomously and what requires human approval.
+Without WALLET.md, an agent with financial authority is a liability. WALLET.md constrains spending, defines approval thresholds, and ensures financial actions are auditable. It's the difference between an agent with a corporate card and an agent with a blank check.
 
-WALLET.md connects to the broader economic identity stack: BUDGET.md for spending limits, OWNER.md for detailed earnings and entity information, PERMISSIONS.md for pre-approved tool subscriptions, and PRICING.md for the agent's service rates. Together, these specs give an agent a complete, auditable financial profile.
+Create a WALLET.md for any agent that spends money, manages budgets, or participates in economic transactions with other agents or services.
+
+---
 
 ## Quick Start
 
@@ -20,26 +31,51 @@ WALLET.md connects to the broader economic identity stack: BUDGET.md for spendin
 curl -O https://raw.githubusercontent.com/totalmarkdown/wallet.md/main/WALLET.md
 ```
 
-Then customize the placeholder fields (`[agent_name]`, `[address]`, `[spending limits]`, etc.) for your agent.
+Add to your project root and customize for your agent.
 
-## When to Use WALLET.md
+---
 
-- **Your agent accepts payment for services** and you need a standardized, machine-readable declaration of wallet addresses across multiple networks so clients know where to pay.
-- **Your agent spends money autonomously** on API calls, data purchases, or tool subscriptions and you need clear spending limits and approval thresholds documented in one place.
-- **You are building an agent marketplace** and need a consistent format for agents to declare their financial capabilities, payment preferences, and tax compliance status.
+## When to use WALLET.md
 
-## Where It Fits
+- Setting spending limits for an agent that purchases API calls or cloud resources
+- Defining budget allocation for an agent that hires sub-agents for specialized tasks
+- Establishing payment and billing identity for an agent operating in a marketplace
 
-WALLET.md is one of 153 agent configuration file type specifications in the [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs) library. It belongs to the **Economic** category alongside OWNER.md, CV.md, and PRICING.md.
+---
 
-## Full Specification
+## Where it fits
 
-Read the complete spec: **[WALLET.md](./WALLET.md)**
+Works with HIREME.md (engagement terms), PRICING.md (service pricing), and BUDGET.md (detailed budget management). Part of the economic identity stack alongside CV.md and OWNER.md. Referenced by AGENTS.md.
+
+---
+
+## The Full Spec
+
+→ [WALLET.md](./WALLET.md)
+
+---
+
+## Part of agent-md-specs
+
+One of 153 specs in [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)
+— the open standard library covering every dimension of AI agent configuration.
+
+---
 
 ## Contributing
 
-Improvements welcome. Please use the [Spec Improvement](https://github.com/totalmarkdown/wallet.md/issues/new?template=improvement.md) issue template.
+1. Open an issue describing your proposed change
+2. Fork and make your edit
+3. Open a PR — all contributions must be CC0
+
+---
 
 ## License
 
-[CC0 1.0 Universal](./LICENSE) -- Public Domain. Use it however you want.
+[CC0 1.0 Universal](./LICENSE) — Public Domain.
+Use freely for any purpose, no attribution required.
+
+---
+
+*Maintained by TotalMarkdown.ai*
+*Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
