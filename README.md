@@ -17,11 +17,21 @@
 
 ## What is WALLET.md?
 
-WALLET.md defines an agent's financial identity and capabilities. It specifies budgets, spending limits, payment methods, and the authority an agent has to make financial decisions. As agents begin to transact — paying for APIs, hiring other agents, purchasing resources — they need a clear financial framework.
+WALLET.md defines an agent's financial identity across both traditional
+finance and decentralized finance. It specifies budgets, spending limits,
+payment methods, wallet addresses, and the authority an agent has to
+make financial decisions autonomously.
 
-Without WALLET.md, an agent with financial authority is a liability. WALLET.md constrains spending, defines approval thresholds, and ensures financial actions are auditable. It's the difference between an agent with a corporate card and an agent with a blank check.
+AI agents increasingly need financial identity — not just for enterprise
+billing, but for autonomous transactions. In the emerging agent economy,
+agents hire other agents, pay for API access, and manage budgets
+autonomously. WALLET.md provides the structured, auditable financial
+identity that makes this possible.
 
-Create a WALLET.md for any agent that spends money, manages budgets, or participates in economic transactions with other agents or services.
+Without WALLET.md, an agent with financial authority is a liability.
+WALLET.md constrains spending, defines approval thresholds, and ensures
+financial actions are auditable. It's the difference between an agent
+with a corporate card and an agent with a blank check.
 
 ---
 
@@ -40,6 +50,22 @@ Add to your project root and customize for your agent.
 - Setting spending limits for an agent that purchases API calls or cloud resources
 - Defining budget allocation for an agent that hires sub-agents for specialized tasks
 - Establishing payment and billing identity for an agent operating in a marketplace
+- Configuring on-chain wallet addresses for DeFi or crypto-native agents
+- Enabling agent-to-agent payments in multi-agent systems
+
+## Example Use Cases
+
+**Enterprise:** An agent managing cloud infrastructure has a WALLET.md
+linked to the company's AWS billing account with a $10,000/month cap
+and automatic degradation to cached results when budget reaches 90%.
+
+**Crypto/DeFi:** A DeFi trading agent holds an on-chain wallet address
+with authorized token types, transaction limits, and approved smart
+contracts defined in WALLET.md — never storing private keys directly.
+
+**Agent Economy:** Agent A hires Agent B via HIREME.md and pays per
+task using the wallet credentials defined in each agent's WALLET.md,
+with all transactions logged to AUDITTRAIL.md.
 
 ---
 
