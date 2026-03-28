@@ -73,10 +73,10 @@ spending_authority_usd: number  # Max can spend without approval
 **Auto-invoicing:** [enabled | disabled]
 
 ## Spending Authority
-This agent can spend autonomously up to:
-**Per transaction:** $[X]  
-**Per day:** $[X]  
-**Per month:** $[X] (see BUDGET.md)  
+This agent can spend autonomously up to (see BUDGET.md for full controls):
+**Per transaction:** $[X]
+**Per day:** $[X]
+**Per month:** $[X]
 **Approval required above:** $[X]
 
 What this agent can spend on autonomously:
@@ -109,7 +109,8 @@ Retention: [X years] for tax purposes
 **1099/reporting:** [automatic via marketplace | manual]
 
 ## Security
-- Private keys stored: [hardware wallet | HSM | keychain] — NEVER in this file
+_See ATTESTATION.md for identity verification and credential lifecycle._
+- Private keys stored: [hardware wallet | HSM | keychain] -- NEVER in this file
 - Multi-sig required for: [transactions above $X]
 - Cold storage for: [long-term holdings]
 - Hot wallet limit: $[X] maximum balance
@@ -117,6 +118,14 @@ Retention: [X years] for tax purposes
 ## DeFi & Staking
 [If applicable — what protocols this agent participates in]
 ```
+
+## Example Use Cases
+
+**Enterprise:** A DevOps agent autonomously purchases cloud compute resources via its WALLET.md-configured spending authority ($500/day limit), paying with USDC on Ethereum for auto-scaling infrastructure while logging every transaction for the finance team's monthly reconciliation.
+
+**Multi-Agent Fleet:** A platform operator configures WALLET.md for each agent with tiered spending authority (research agents: $50/day for API calls, deployment agents: $200/day for infrastructure) and requires multi-sig approval for any transaction above $1,000.
+
+**Marketplace:** An agent earning revenue from marketplace task completions receives USDC payments to its declared wallet address, with automatic weekly payouts to the human owner's account and tax jurisdiction documentation ready for 1099 reporting at year-end.
 
 ## Related Specs
 
