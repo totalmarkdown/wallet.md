@@ -4,27 +4,22 @@ spec_version: 0.1.0
 category: Economic
 domain: walletmd.dev
 priority: High
+volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
-canonical_repo: https://github.com/totalmarkdown/wallet.md
-part_of: https://github.com/totalmarkdown/agent-md-specs
+tier: core
 ---
+
+> **Canonical repository:**
+> [totalmarkdown/wallet.md](https://github.com/totalmarkdown/wallet.md)
+> This copy is included in agent-md-specs for cross-reference.
+> For contributions to this specific spec, use the canonical repo.
 
 # WALLET.md
 
 **Category:** Economic
 **Domain:** walletmd.dev
 **Priority:** High
-**Version:** 0.1.0
-
-> This is the canonical repository for the WALLET.md specification.
-> Also part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)
-> — the comprehensive library of 178 agent configuration file type specs.
-
-## WALLET.md
-**Category:** Economic  
-**Domain:** walletmd.dev (register)  
-**Priority:** HIGH — forward-thinking, connects to crypto payments  
 **Version:** 0.1.0
 
 ### Purpose
@@ -123,9 +118,18 @@ Retention: [X years] for tax purposes
 [If applicable — what protocols this agent participates in]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| BUDGET.md | Cost controls and spending limits |
+| HIREME.md | Agent hiring and engagement |
+| OWNER.md | Agent ownership and liability |
+| PERMISSIONS.md | Static resource access control |
+| PRICING.md | Cost structure |
 
 ---
 
-*Maintained by TotalMarkdown.ai*
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
-*License: CC0 1.0 Universal (Public Domain)*
+*Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*
